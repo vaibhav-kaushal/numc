@@ -5,6 +5,9 @@ function numc() {
     d2o)
       printf "%o" ${2}
       ;;
+    o2d)
+      printf $(([##10]8#${2}))
+      ;;
     h2d)
       print $((16#${2}))
       ;;
@@ -28,5 +31,3 @@ function numc() {
       ;;
   esac
 }
-
-
